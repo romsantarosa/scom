@@ -1,0 +1,158 @@
+.copy-code {
+	position: absolute;
+    top: 0;
+    right: 0;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 12px;
+    background-color: #2FBFC1;
+    color: #ffffff;
+	cursor: pointer;
+	text-transform: uppercase;
+    font-size: 14px;
+	transition: all 0.3s ease-in-out;
+}
+.copy-code:hover {
+    opacity: 0.8;
+}
+.copy-code i {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+	opacity: 0;
+	width: 0;
+    padding: 0;
+	font-size: 12px;
+	text-transform: none;
+	font-style: normal;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+}
+.copy-code.copied i {
+	opacity: 1;
+	width: 16px;
+}
+pre[rel]:before {
+    position: absolute;
+    display: block;
+    content: attr(rel);
+    color: #292929;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #E2E3E8;
+    padding: 8px 8px 8px 14px;
+}
+pre {
+	overflow-y: none;
+	background: #1d1f21;	
+	max-width: 1000px;
+	padding-top: 33px;
+	color: #f5f6fa;
+}
+pre * {
+	font-weight: normal;
+	font-size: 15px;
+}
+pre code {
+    position: relative;
+    display: block;
+    font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+    background: none;
+    padding: 15px 15px 15px 60px;
+    white-space: pre;
+    overflow-y: auto;
+    max-height: 600px;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #777;
+}
+
+.token.punctuation,
+.token.tag,
+.token.attr-name {
+	color: #ab875d;
+}
+
+.token.property,
+.token.boolean,
+.token.number {
+	color: #9b869c;
+}
+
+.token.selector {
+	color: #dfc48c;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.string {
+	color: #8f9c6c;
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+
+.language-css {
+	color: #cd6a51;
+	.token.punctuation {
+		color: white;
+	}
+}
+
+.language-javascript {
+
+}
+pre.line-numbers {
+	position: relative;
+	counter-reset: linenumber;
+}
+pre.line-numbers > code {
+	position: relative;
+}
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: 0;
+	width: 3em;
+	padding: 15px 5px 15px 0;
+	background: rgba(255,255,255,0.1);
+	letter-spacing: -1px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+.line-numbers-rows > span {
+	color: #777777;
+	pointer-events: none;
+	display: block;
+	counter-increment: linenumber;
+}
+.line-numbers-rows > span:before {
+	content: counter(linenumber);
+	color: #777777;
+	display: block;
+	padding-right: 0.8em;
+	text-align: right;
+}

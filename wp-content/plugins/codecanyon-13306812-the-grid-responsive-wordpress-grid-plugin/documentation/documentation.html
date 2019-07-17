@@ -1,0 +1,2023 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>The Grid - Premium Wordpress Grid Plugin</title>
+	
+	<meta name="description" content="An easy way to generate your documentation!">
+	<meta name="author" content="Themeone">
+	<meta name="copyright" content="Themeone">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-09-30T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/css/prism.css" media="screen">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900%7COpen+Sans:300italic,400italic,600italic,300,400,600%7CSource+Code+Pro:400">
+	<link rel="stylesheet" href="assets/css/custom.css" media="screen">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+	<!---<script src="assets/js/google-code-prettify/prettify.js"></script>--->
+	<script src="assets/js/jquery.js"></script>
+    <script src="assets/js/prism.js"></script>
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	<script>document.createElement('section');var duration='450',easing='easeOutExpo';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{overflow-x: hidden;background-color:#F5F5f5;color:#666666;}
+		::-moz-selection{background:#111111;color:#F1F1F1;}
+		::selection{background:#111111;color:#F1F1F1;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_16.png);}
+		a{color:#2FBFC1;font-weight: 600;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -ms-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -webkit-gradient(linear, 0 0, 0 585858%, from(#292929), to(#3B3B3B));
+			  background-image: -webkit-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: -o-linear-gradient(top, #585858, #3B3B3B);
+			  background-image: linear-gradient(top, #585858, #3B3B3B);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585858', endColorstr='#3B3B3B', GradientType=0);
+			  border-color: #3B3B3B #3B3B3B #bfbfbf;
+			  color:#F9F9F9;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #585858 #585858 #bfbfbf;
+		  background-color: #3B3B3B;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #F9F9F9;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#292929;color:#F1F1F1;}
+		#documenter_sidebar ul a{color:#F1F1F1;}
+		#documenter_sidebar ul a:hover{background:#111111;color:#F1F1F1;}
+		#documenter_sidebar ul a.current{background:#111111;color:#F1F1F1;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+	
+</head>
+<body class="documenter-project-the-grid">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+        	<li><a href="#requirements" title="Plugin Requirements">Plugin Requirements</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+            <li><a href="#register_plugin" title="Register plugin">Register Plugin</a></li>
+            <li><a href="#update_plugin" title="Update plugin">Update Plugin</a></li>
+			<li><a href="#build_grid" title="Build your first grid">Quick Start - Build a grid</a></li>
+            <li><a href="#source_settings" title="Content settings">Source/content settings</a></li>
+            <li><a href="#media_settings" title="Media settings">Media content settings</a></li>
+            <li><a href="#social_media" title="Social Media">Social Media Content</a></li>
+            <li><a href="#grid_settings" title="Grid settings">Main grid settings</a></li>
+            <li><a href="#filter_settings" title="Filter settings">Filter/sorter settings</a></li>
+            <li><a href="#pagination_settings" title="Pagination settings">Pagination settings</a></li>
+			<li><a href="#layout_settings" title="Layout settings">Layout settings</a></li>
+            <li><a href="#skin_settings" title="Skins settings">Skin settings</a></li>
+            <li><a href="#animations_settings" title="Animations">Animations settings</a></li>
+            <li><a href="#ajax_settings" title="Ajax settings">Load/Ajax settings</a></li>
+            <li><a href="#custom_css_js_code" title="Custom CSS/JS code">Custom CSS/JS code</a></li>
+            <li><a href="#term_color" title="Term/Category color">Term/Category color</a></li>
+            <li><a href="#global_settings" title="Global settings">Global Settings</a></li>
+            <li><a href="#import_export" title="Import/Export">Import/Export</a></li>
+            <li><a href="#skin_builder" title="Skin Builder">Skin Builder</a></li>
+            <li><a href="#grid_as_template" title="grid template">The Grid as template</a></li>
+            <li><a href="#troubleshooting" title="Troubleshooting">Troubleshooting</a></li>
+            <li><a href="#developer_guide" title="Developer Guide">Developer Guide</a></li>
+		</ul>
+		<div id="documenter_copyright">Copyright Themeone 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+    
+    <div id="header-image" style="background-image: url(./assets/images/the-grid-main-header.png); background-position: 50% 50%;" class="to-header-image no-repeat">
+    <h1 style="text-align:center;padding: 160px 0">The Grid<br>Documentation<h1>
+    </div>
+	<br><br>
+    
+    
+    <!-- Plugin Requirements -->
+	<section id="requirements">
+    
+    	<div class="page-header"><h3>Plugin Requirements</h3><div class="notop"></div>
+    
+    	<p>To run the grid you must have at minium: PHP version 5.3.0</p>
+        
+        <p>If you are using Visual Composer, then you must at least run Visual Composer v4.7.4.</p>
+        
+        <p>In the grid panel, we also added in the system requirement box some recommendations about your php limits.<br>
+        These are just some recommendations and are not necessary to run The Grid properly.</p>
+        
+         <img height="240" src="assets/images/system-requirements.jpg">
+    
+    </section>
+    
+    <!-- installation -->
+	<section id="installation">
+    
+		<div class="page-header"><h3>Installation</h3><div class="notop"></div>
+
+		<p>At first, you need to download The Grid plugin from Codecanyon using your account.<br>At the root folder of this zip file, you will find an other zip file named the-grid.zip. This zip file will be used to upload the plugin.</p>
+        <p>To add a WordPress Plugin using the <a href="https://codex.wordpress.org/Administration_Screens#Add_New_Plugins">built-in plugin installer</a>:</p>
+            <ol>
+                <li>Go to <b><a href="https://codex.wordpress.org/Administration_Screens#Plugins">Plugins</a>&nbsp;&gt;&nbsp;<a href="https://codex.wordpress.org/Plugins_Add_New_Screen" title="Plugins Add New Screen">Add New</a></b>.</li>
+                <li>Upload the-grid.zip plugin zip file</li>
+                <li>Click on install Now</li>
+                <li>If successful, click&nbsp;<b>Activate Plugin</b>&nbsp;to activate it, or&nbsp;<b>Return to Plugin Installer</b>&nbsp;for further actions.</li>
+            </ol>
+        <p>For information on how to install a WordPress Plugin manually, see this&nbsp;<a href="https://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation">manual installation guide</a>&nbsp;below.	</p>
+    
+        <img height="380" src="assets/images/upload-plugin.jpg">&nbsp;&nbsp;
+        <img height="380" src="assets/images/upload-plugin2.jpg">
+  
+	</section>
+    
+    <!-- Update Plugin -->
+    <section id="register_plugin">
+    
+		<div class="page-header"><h3>Register Plugin</h3><div class="notop"></div>
+        
+        <p>In order to unlock the Skin Builder feature and to enable automatic update functionality, you must register The Grid.<br>
+        The registration system uses a secure method from Envato in order to retrieve your purchase code from your user profil.<br>
+        In the registration of the field you must enter a Personal Token generated by Envato (not a purchase code).<br>
+        To generate a Personal Token from Envato, you need to follow these steps:</p>
+        <ol>
+        	<li>Go to the <a href="https://build.envato.com/create-token/?purchase:download=t&amp;purchase:verify=t&amp;purchase:list=t" rel="nofollow">Envato Token Generator</a> to create a Personal Token</li>
+            <li>Enter a Token Name, select I have read checkbox and click on create token</li>
+            <li>Copy the Personal Token, select confirm checkbox and click on Woohoo Got It</li>
+            <li>Enter the previously generated Personal Token in The Grid registration field</li>
+        </ol>
+        <p><strong>N.B:</strong> You must valide the personal token on Envato before to try to register The Grid otherwise it will not work</p>
+        <p><strong>N.B:</strong> Because the registration system makes some requests on Envato server, if there is an issue from Envato then you will not be able to register The Grid. In this case you need to wait several minutes or hours before to try again.</p>
+        
+        <img height="257" src="assets/images/register/register-1.jpg">
+        <img height="257" src="assets/images/register/register-4.jpg"><br>
+        <img height="420" src="assets/images/register/register-2.jpg">
+        <img height="420" src="assets/images/register/register-3.jpg">
+   
+	</section>
+    
+    <!-- Update Plugin -->
+    <section id="update_plugin">
+    
+		<div class="page-header"><h3>Update Plugin</h3><div class="notop"></div>
+
+		<p>The Grid comes with an automatic update functionality.<br>
+        To update The Grid and check for new available version you must enter your Personal Token which can be generated with the Envato API.<br>
+        To get your Personal Token, you must generate one <a href="https://build.envato.com/create-token/?purchase:download=t&purchase:verify=t&purchase:list=t" target="_blank">here</a>.
+        </p>
+        
+       <img height="290" src="assets/images/admin-update.jpg">
+       
+       <p>If you encountered some issues to generate the Personal Token or to register The Grid, you can still update manually with the following steps:</p>
+        
+       <ol>
+          <li>Deactivate the current plugin version installed on your server,</li>
+          <li>Remove this old plugin version,</li>
+          <li>Upload the new plugin version (please look at the <a href="#installation" title="Installation">installation section</a>)</li>
+        </ol>
+        
+        <p><strong>N.B:</strong> When a plugin or a theme is removed/updated from Wordpress, all files are physically deleted from your server.<br>
+        So, if you have made change to the plugin/theme files, all these change will be lost<br>
+        However, all data/options/posts are stored on your server database (MySQL). So, you will not loose any data when updating or removing a theme or a plugin.</p>
+ 
+	</section>
+    
+    <!-- Build your first grid -->
+	<section id="build_grid">
+    
+		<div class="page-header"><h3>Quick Start - Build a grid</h3><div class="notop"></div>
+
+		<p>In this section we will explain how to build your first grid with The Grid Wordpress plugin.</br>
+        <p>At first, go in The Grid admin panel through the left dashboard menu area.<br>
+        You will find 3 sub-menus available:</p>
+		<ol>
+			<li>The Grid, where you can create and manage your grids</li>
+			<li>Import/Export, where you can export and import your grids</li>
+			<li>Global Settings, to set up all global options like color scheme, lightbox, image sizes...</li>
+		</ol>
+        
+        <p>To get started, click on the sub-menu <strong>The Grid > The Grid</strong>.  If there isn't any grid then you will have 2 options: create a new grid or import the demo data.<br>
+        <strong>Import the demo data will create the 20 grid examples which you can find on <a href="http://theme-one.com/the-grid/">The Grid live demo</a></strong>
+        </p>
+        
+        <img height="520" src="assets/images/admin-panel-menu.jpg">
+        
+        </br></br></br></br>
+        
+        
+        <h4>Create a new grid</h4><div class="notop"></div>
+        
+        <p>At first, click on create a new grid. <br>
+        You will be redirected on the grid generator page.<br>
+         Here are the main steps you should follow to create a new grid:</p>
+        
+        <ol>
+			<li>Enter your grid name</li>
+			<li>Select a post type</li>
+            <li>Choose the post formats allowed in your grid</li>
+            <li>Set the style of grid and the number of columns</li>
+            <li>Choose a skin</li>
+            <li>Save a grid</li>
+            <li>Insert a grid</li>
+		</ol>
+        
+ 		<p><strong>N.B. : </strong>All these steps are optional and a grid will be automatically generated with the default post type of Wordpress without any settings.<br>
+        So, if you want, you can directly preview the grid and save it.</p>
+        
+        
+        <h4>1. Enter your grid name</h4><div class="notop"></div>
+        
+        <p>At first, under the <strong>General tab</strong>, you will find a field where you can enter your grid name<br>
+        This field must be not empty and it should not contain a grid name which already existing.<br>
+        While entering your grid name inside this field, you will see that it will also generated the shortcode on the field below.<br>
+        You can copy/paste this shortcode everywhere you want in order to display the current grid (in an page/post text editor for example).</p>
+        
+        <img height="280" src="assets/images/grid-name-shortcode.jpg">
+        
+        <h4>2. Select a post type</h4><div class="notop"></div>
+        
+        <p>Under the tab <strong>Source</strong>, you can set the number of items to display inside the grid.<br>
+        For example, if you set number to 6, then it will display 6 elements inside the grid (at first load).</p>
+        
+        <img height="108" src="assets/images/number-of-item.jpg">
+        
+        <p>you can select the post type(s) you want to display inside the grid.<br>
+        Several post types can be selected as a source content.</p>
+        
+        <img height="111" src="assets/images/grid-post-types.jpg">
+        
+        <p><strong>N.B. :</strong> You will find more details under <a href="#source_settings">Source/Content Tab documentation</a></p>
+        
+        <h4>3. Choose the post formats allowed in your grid</h4><div class="notop"></div>
+        
+        <p>Under the tab <strong>Media</strong>, you can select the post formats you want to allow inside the grid.<br>
+        For example, if you select video and audio formats, then the grid will retrieve any video/audio media content available in your post type source.<br>
+        If video or audio are found, then it will be display inside the grid.</p>
+        
+        <img height="170" src="assets/images/allowed-post-formats.jpg">
+        
+        <p><strong>N.B. :</strong> You will find more details under <a href="#media_settings">Media Tab documentation</a></p>
+        
+        <h4>4. Set the style of grid and the number of columns</h4><div class="notop"></div>
+        
+        <p>Under the tab <strong>Grid</strong> you can choose the style of grid:</p>
+        <ul>
+        	<li><strong>Masonry</strong> (preserve natural aspect ratio of images and content)</li>
+            <li><strong>Grid</strong> (each item are proportionnal to each other's)</li>
+            <li><strong>Justified</strong> (each items have the same height in a row)</li>
+        </ul>
+        
+        <img height="268" src="assets/images/grid-styles.jpg">
+        
+        <p>You can also set the number of columns in the grid for different device sizes (browser widths):</p>
+        
+        <img height="400" src="assets/images/grid-columns-settings.jpg">
+        
+        <p><strong>N.B. :</strong> You will find more details under <a href="#grid_settings">Main Grid settings Tab documentation</a></p>
+        
+        <h4>5. Choose a skin</h4><div class="notop"></div>
+        
+        <p>Under the tab <strong>Skins</strong> you can choose the skin of the items display inside the grid.<br>
+        Just click on the skin you want for this grid to select it.<br>
+        Depending of the grid style which was set under <strong>Grid tab</strong> section, available skins will be different for Masonry and Grid style.</p>
+        
+        <img height="400" src="assets/images/grid-select-skin.jpg">
+        
+        <p><strong>N.B. :</strong> You will find more details under <a href="#skin_settings">Skin settings Tab documentation</a></p>
+        
+        <h4>6. Save a grid</h4><div class="notop"></div>
+        
+        <p>Now, you have configured the main settings of the grid, you can save it:</p>
+        
+        <img height="80" src="assets/images/grid-save.jpg">
+
+        
+        <h4>7. Insert a grid</h4><div class="notop"></div>
+        
+        <p>To insert a grid in a page or a post, you just need to copy paste the shortcode where you want to make it appear.<br>
+        To easily insert a grid in a page (for example), you can also use the shortcode interface or Visual composer.</p>
+        
+         <img height="282" src="assets/images/grid-shortcode.jpg">
+         <img height="280" src="assets/images/grid-shortcode-interface.jpg"><br>
+		 <img height="280" src="assets/images/grid-visual-composer.jpg">
+         <img height="280" src="assets/images/grid-visual-composer-interface.jpg">
+	</section>
+
+	<!-- Source Settings -->
+    <section id="source_settings">
+    
+		<div class="page-header"><h3>Source/content settings</h3><div class="notop"></div>
+        
+        <p>In the source tab you can deeply customize the type of content that you want to display inside a grid.<br>
+        We have added all options which Wordpress offers to query the content from post types. There isn't any limitation and the possibilities are infinite.<br>
+        You will be able to filter you content by any category(ies), status, author(s), meta key(s), etc...</p>
+        
+        <p><strong>N.B : </strong>By default the grid will display all the posts ordered by date in descending order (...,4,3,2,1,0).</strong><br><br>
+        
+        <img height="500" src="assets/images/source-post-type.jpg">
+        
+        
+        <p><strong>Item Number</strong> correspond to the number of elements initially loaded in the grid:</p>
+        <ul>
+        <li><strong>-1 :</strong> load all posts from the selected post type</li>
+        <li><strong>&nbsp;0 :</strong> Correspond to the default number of <em>"post per page"</em> set in the native Wordpress settings (Wordpress Settings > Reading)</li>
+        </ul>
+        <p><strong>Post type</strong> correspond to the main content you want to load in the grid like your post(blog), portfolio, product,...<br>
+        You can add multiple post types per grid (unlimited number).</p>
+        <p><strong>Post status</strong> correspond to the current post status you want to make appear in the grid.<br>
+        By default publish statut is enable. But if you want, for example, to only display your futur blog posts (which you are currently writing) you can select "pending" or "draft" status.</p>
+        
+        <p><strong>Category Filter - </strong>In this section you can select several categories in order to filter the grid by the selected categories.<br>
+        When one or more categories are selected then the grid with only display these categories from the current post type(s).<br>
+        If no category is selected, then the grid will display all available categories from the current post type(s).</p>
+        <img height="280" src="assets/images/grid-categories.jpg"><br>
+        
+        <p><strong>Exclude items - </strong>If you need to exclude some posts you have the possibility to add the ID of these posts in the field <strong>Exclude items</strong>.<br>
+        In this text field you should enter the ID(s) of the post(s) to exclude from the source. Each ID must be separated by a comma.<br>
+        You can also use the preview mode to exclude items and auto fill this field by click on the eye icon.</p>
+        <img height="150" src="assets/images/grid-exclude-items.jpg"><br>
+        <img height="280" src="assets/images/grid-exclude-items-preview.jpg">
+        
+        <p><strong>Ordering - </strong>Now that you setup the content of the grid, you can arrange it by different types of parameters.</p>
+        <img height="110" src="assets/images/grid-orderby.jpg">
+        <p>You can order by date, title, post ID, number of comments, authors, meta key(s),...<br>
+        All the possibilities offered by Wordpress are available.</p>
+        <p><strong>Ordering Example : </strong>Display the most like post using the built in post like system from the Grid Plugin.<br>
+        By ordering with a numeric meta value, you will be able to display the most like post by descending order for example. The meta key name is "_post_like_count".<br>
+        The image below illustrate this example. It can be expanded to any meta key.</p>
+        <img height="110" src="assets/images/grid-orderby-example.jpg">
+        
+         <p><strong>Meta Key Filter - </strong>If you want to deeply customize the content/source filter, you can use the drag and drop Meta Key filter interface.<br>
+         With meta key, you will be able to filter your content by certain value such as, number of like, product price, product in sale,...<br>
+         Meta data are generally used by 3rd party plugins in order to add some additionnal content to a post type (woocommerce price for example).<br>
+         So, if you want to use a meta key to filter the content, you must ask to the plugin/theme author what is the meta key name which store the value you are searching for.</p>
+         
+         <p><strong>Meta Key Filter Example 1 : </strong>Display only posts which have more than 5 likes (using our built-in post like system).<br>
+         The image below illustrate this example. It can be expanded to any meta key.</p>
+         <img height="200" src="assets/images/grid-meta-key-filter-1.jpg">
+         
+         <p><strong>Meta Key Filter Example 2 : </strong>Display only products on sale.<br></p>
+         <img height="195" src="assets/images/grid-meta-key-filter-2.jpg">
+         
+         <p><strong>Meta Key Filter Example 3 : </strong>Display only products on sale with a price superior to 40$ and with available stock. And orderby sale price in ascending order (from lowest to highest sale price).<br></p>
+         <img height="300" src="assets/images/grid-meta-key-filter-3.jpg"><br>
+         <img height="122" src="assets/images/grid-meta-key-filter-4.jpg">
+        
+    </section>
+    
+	<!-- Media Settings -->
+    <section id="media_settings">
+    
+		<div class="page-header"><h3>Media content settings</h3><div class="notop"></div>
+        
+        <p>The Grid Plugin support native <a href="https://codex.wordpress.org/Post_Formats">Wordpress post format</a>.<br>
+        Here are the following supported post formats:</p>
+        <ul>
+        	<li>Standard</li>
+            <li>Gallery</li>
+            <li>Video</li>
+            <li>Audio</li>
+            <li>Quote (only in masonry mode)</li>
+            <li>Link (only in masonry mode)</li>
+		</ul>
+        <p><strong>N.B. : </strong>Available Post Format will depend of the theme you are using. Some themes do not allow all post format.</p>
+        <p>These format are supported in all skins (except for Quote & Link format which are only supported in masonry layout).<br>
+        If you have correctly set the post format in your post and also added directly in the content a gallery, a video or a song then The Grid plugin will be able to retrieve these contents.</p>
+        <p>Alternatively, you can use our own post format settings to add extra content for image, gallery, video, audio, quote and link.<br>
+        You will find in each post type a setting box where you can add your content according to the selected format.<br>
+        The alternative content setup in this option box will be retrieve at first and if no content was found then it will search the first media content in the post content.</p>
+        
+        <img height="473" src="assets/images/grid-post-format.jpg">
+        
+        <p><strong>These settings are also available when you preview the grid in the admin panel. You can easly access to all posts settings in preview mode.</strong></p>
+        
+        <img height="510" src="assets/images/grid-post-format-2.jpg">
+        
+		<p><strong>Youtube/Vimeo Video - </strong>To add a Youtube/Vimeo embed video you must enter the video ID into the corresponding field.<br>
+        You will find YouTube or Vimeo's video ID, by visiting the video on Youtube.com or Vimeo.com. The ID is located in the adress bar like this:</p>
+        <img height="33" src="assets/images/youtube-id.jpg"><br>
+        <img height="33" src="assets/images/vimeo-id.jpg"><br><br>
+		<img height="510" src="assets/images/grid-embed-video.jpg">
+        <p>You can also set the aspect ratio of the video in order to perfectly fit to the video you want to embed.</p>
+        
+        <p><strong>Audio Format - </strong>To add an embed Soundcloud song you must also enter the ID of the Soundcloud song.<br>
+        To get the SoundCloud ID you must click at first on share button. Then you must click on embed and copy the number you will find just after <strong>"//api.soundcloud.com/tracks/"</strong> in the url.
+        </p>
+        <img height="280" src="assets/images/soundcloud-share.jpg">&nbsp;&nbsp;&nbsp;
+        <img height="280" src="assets/images/soundcloud-embed.jpg"><br>
+        <p>You just need to paste this ID in the SoundCloud field.</p>
+        <img height="280" src="assets/images/soundcloud-id.jpg">
+        
+        <p>In the grid settings under media tab, you have the possibility to allow or not post format like video, audio, quote, link...</p>
+        
+        <img height="510" src="assets/images/grid-media-settings.jpg">
+        
+        <p>In this settings tab, you also have the possibility to show all post format video in a lightbox instead of displaying the video inside grid element.<br>
+        Just by activating this option all videos will be automatically played in a lightbox.</p>
+        
+        <p><strong>N.B. : </strong>All skins are compatible with video/audio media and can be play directly in a grid item (by default; in a lightbox optionnal).</p>
+        
+        <p><strong id="#image-format">Image Format - </strong>Depending of your grid settings (number of columns), it might be interesting to load images which have the right sizes in order to improve the loading speed.<br>
+        You have 2 possibilities to optimize image sizes:</p>
+        <ol>
+        	<li>Smart Resize, it resize images on the fly in order to fit perfectly to each element in the grid.</li>
+            <li>Images Sizes, predefined image sizes which you can set in Settings > Media or in The Grid > Global Options panel.</li>
+        </ol>
+        <p>Image sizes are generated when you upload new images in Wordpress. So, if you want to use one of the image size set in Global options with images uploaded before installing The Grid then you must regenerate them. You can use a plugin like <a href="https://fr.wordpress.org/plugins/regenerate-thumbnails/">Regenerate Thumbnail</a> to regenerate all image sizes.</p> 
+        
+        <p><strong>N.B. : </strong> Smart resize option currently doesn't work with CDN.</p> 
+        
+    </section>
+    
+    
+    <!-- Social Media -->
+	<section id="social_media">
+    
+    	<div class="page-header"><h3>Social Media Content</h3><div class="notop"></div>
+    
+    	<p>Since v1.3.1, The Grid allows to display external content:</p>
+        
+        <ol>
+			<li>Instagram</li>
+			<li>Youtube</li>
+            <li>Vimeo</li>
+			<li>Facebook</li>
+			<li>Twitter</li>
+			<li>Flickr</li>
+            <li>RSS Feed</li>
+		</ol>
+        
+         <img height="380" src="assets/images/social-media-content.jpg">
+         
+         <p>In order to display social media content in the grid, you need at first to enter your personnal API key for each API (Instagram, Youtube, Vimeo) in the Global settings under API tab.</p>
+         
+         <img height="540" src="assets/images/global-api.jpg">
+         
+         <p>For each API, you must generate your personnal key and enter it in this global setting panel.<br>
+         Under each field, you will find a link in order to generate this key. Please follow the instruction provided by the social company in order to generate your API key.</p>
+         
+         <p>In order to preserve performances, The Grid will cache the result from any social media content during one hour.<br>
+         This will allow to improve drastically the loading speed of your website by preventing to fetch data from an external server each time.</p>
+         
+         <p>After setting up your API keys, you will be able to use social media content.</p>
+         
+         <h4>1. Instagram</h4>
+         
+         <p>You can display in the grid a combination of user(s) and hash tag(s):</p>
+         
+         <img height="245" src="assets/images/instagram-settings.jpg">
+         
+         <p>User(s) can be entered directly with the username or the user ID (http://jelled.com/instagram/lookup-user-id#).<br>
+         Setup the user directly with an ID will allow to preserve one request from Instagram and make the loading speed quicker.</p>
+         
+         <h4>2. Youtube</h4>
+         
+         <p>You can display from Youtube:</p>
+         
+         <ol>
+			<li>Channel</li>
+			<li>Playlist</li>
+            <li>Video(s)</li>
+		 </ol>
+         
+         <p>One channel and one playlist can be displayed per grid in order to preserve performance.</p>
+         <p>For Youtube video(s) source you can enter multiple video IDs separated by a comma.</p>
+         <p>IDs can be found in the Youtube url.</p>
+         
+         <img height="280" src="assets/images/youtube-settings.jpg"><br>
+         <img height="30" src="assets/images/youtube-playlist-id.jpg">
+         
+         <h4>3. Vimeo</h4>
+         
+         <p>You can display from Vimeo:</p>
+         
+         <ol>
+			<li>User</li>
+			<li>Album</li>
+            <li>Group</li>
+            <li>Channel</li>
+		 </ol>
+         
+         <p>One user or ID can be set per grid in order to preserve performance.</p>
+         <p>User an IDs can be found in the Vimeo url.</p>
+         
+         <img height="280" src="assets/images/vimeo-settings.jpg"><br>
+         <img height="30" src="assets/images/vimeo-user.jpg">
+         
+         <h4>4. Facebook</h4>
+         
+         <p>You can display from Facebook:</p>
+         
+         <ol>
+			<li>Facebook public page (not user profil)</li>
+			<li>Public group page</li>
+            <li>Public album</li>
+		 </ol>
+         
+         <p>Public group page and Public album require a valid ID in order to fetch the content from Facebook.<br>
+         You will find Facebook ID in the url of the group or album page or you can use some <a href="https://lookup-id.com/#">web services</a> to get the ID.</p>
+         
+          <img height="200" src="assets/images/facebook-settings.jpg"><br>
+         
+         <h4>5. Twitter</h4>
+         
+         <p>You can display from Twitter:</p>
+         
+         <ol>
+			<li>User Timeline</li>
+			<li>Tweets by search</li>
+            <li>User Favorites</li>
+            <li>User List</li>
+		 </ol>
+         
+          <img height="300" src="assets/images/twitter-settings.jpg"><br>
+          
+		 <h4>6. Flickr</h4>
+         
+         <p>You can display from Flickr:</p>
+         
+         <ol>
+			<li>Public Photos</li>
+			<li>Photoset</li>
+            <li>Gallery</li>
+            <li>Groups Photos</li>
+		 </ol>
+         
+         <img height="275" src="assets/images/flickr-settings.jpg"><br> 
+         
+         <h4>7. RSS Feed</h4>
+         
+         <p>You can display from a RSS Feed any valid rss feed url.<br>
+         A lot of services have RSS feed like:</p>
+         
+         <ol>
+			<li>500px: http://500px.com/tim_santasombat/rss</li>
+			<li>Youtube: https://www.youtube.com/user/goprocamera</li>
+            <li>Vimeo: http://vimeo.com/toddmartinfilms/videos/rss</li>
+		 </ol>
+         
+         <img height="130" src="assets/images/rss-feed-settings.jpg"><br>  
+    
+    </section>
+    
+    <!-- Main Grid Settings -->
+    <section id="grid_settings">
+    
+		<div class="page-header"><h3>Main grid settings</h3><div class="notop"></div>
+        
+        <p>The grid plugin offer 3 main types/layouts to display your content:</p>
+        <ul>
+        	<li><strong>Masonry</strong> (preserve natural aspect ratio of images and content)</li>
+            <li><strong>Grid</strong> (each item are proportionnal to each other's)</li>
+            <li><strong>Justified</strong> (each items have the same height in a row)</li>
+        </ul>
+        
+        <img height="304" src="assets/images/grid-style.jpg">
+        
+        <p>You can adjust the space between each item in the grid thanks to the gutters options.<br>
+        If you are in Grid style, then you will have the possibility to adjust the item ratio. It corresponds to the ratio between the width and height of the item in the grid (like 4:3, 16:9 format).<br>
+        Each item in the grid can have different sizes (number of row & column). The size of an item can be set in each edit post page or directly in the preview grid mode.</p>
+        
+        <img height="300" src="assets/images/grid-items-size.jpg"><br>
+        <img height="432" src="assets/images/grid-item-size.jpg">
+        
+        <p>There is also an option to override all item sizes individually set for any post types.<br>
+        In that way you can force each element in the grid to have the same size even if a size was set individually for an item.</p>
+        
+        <p><strong>Column settings - </strong>The Columns section will allow you to assign a number of column for different screen widths.<br>
+        You can also set up the associated browser width for each number of column by activating "advanced column settings".</p>
+        
+        <img height="470" src="assets/images/grid-columns.jpg">
+        
+        <p>In preview mode, you have the possibility to switch from the different browser widths and to check what will look like the grid for different widths.</p>
+        
+        <img height="243" src="assets/images/grid-columns-preview.jpg">
+        
+        
+    </section>
+    <!-- Filter/Sorter Settings -->
+    <section id="filter_settings">
+    
+		<div class="page-header"><h3>Filter/sorter settings</h3><div class="notop"></div>
+        
+        <p>One of a great feature of The Grid Plugin is the ability to filter/sort the grid.<br>
+        You have the possibility to use any custom taxonomy like category, tag, format to build one or several filter areas for your grids.<br>
+        The available taxonomy terms (filters) will depend of the selected post type.</p>
+        
+        <p> To build you filter areas, you simply need to drag and drop the desired terms in the filter area.<br>
+        If you want to add several filter area you can create unlimited number of areas thanks to the button "add filter".</p>   
+        
+        <img height="480" src="assets/images/grid-filters.jpg"> 
+        
+        <p>You have some options inside each filter area to arrange/order terms, to display the number of filter and choose the text displayed for this filter (all button, dorpdown sentence,...).<br>
+        The filter areas you created are available under the grid layout tab. You can drag & drop these filter areas everywhere you want in the available layout area.</p>
+        
+        <img height="480" src="assets/images/grid-filters-area.jpg"> 
+        
+        <p>Because you have the possibility to generate several filter areas, you have an option to create combination filter.<br>
+        By combination, we mean that you can activate different filters at the same times to filter the grid.<br>
+        There are two different combinations possible:</p>
+        
+        <ol>
+        	<li><strong>AND Logic</strong> (e.g. :active filters t-shirts & red color => will display only red t-shirts)</li>
+            <li><strong>OR Logic</strong> (e.g. :active filters t-shirts & pants color => will display all t-shirts and all pants)</li>
+       </ol>
+       
+       <p><strong>N.B. : </strong> On the front end, if element inside the grid doesn't have any terms corresponding to the filter areas, then these area will not appear.
+       <br>The terms inside filter areas are also update in real time when appending new items. So if you append new element in the grid the number of filter will be updated and new filters can also appear if there wasn't present before.</p>
+       
+       <p><strong>Sorting - </strong> In this section you can customize the drop down sorter.<br>
+       You can select several items you want to sort with and also choose the text to display in the drop down filter.</p>
+       
+        <img height="360" src="assets/images/grid-sorting.jpg"> 
+        
+        <p>You also have the possibility to filter the grid onload by a selected value/term and to choose the order (ASC/DESC)</p>
+        
+        <p><strong>Add custom filter : </strong> You can add custom sorters from any custom meta data.<br>
+        In the Global settings admin panel, you have the possibility to add unlimited number of custom meta data keys un the tad Meta Data. Once you added some custom meta dat key, this meta data will be available in the filter dropdown list.</p>
+        
+        <img height="360" src="assets/images/grid-custom-filters.jpg">
+        <img height="360" src="assets/images/grid-custom-filters2.jpg">
+      
+        <p><strong>N.B. : </strong> The dropdown soter list will also be available in Layout tab</p>
+
+	</section>
+    
+    <!-- Pagination Settings -->
+    <section id="pagination_settings">
+    
+		<div class="page-header"><h3>Pagination settings</h3><div class="notop"></div>
+        
+        <p>The Grid comes with a powerfull pagination system. It will allows you to recreate a complete portfolio page with a real pagination system.<br>
+        You also have the possibility to add an ajax pagination to load the next page without refreshing the browser.</p>
+        
+        <img height="500" src="assets/images/grid-pagination.jpg"> 
+        
+        <p>You can deeply customize the pagination system (not in ajax mode since it's like a load more button) in order to adjust the number of button pages to display, the prev/next buttons, the page lenght, etc...</p>
+       
+    </section>
+    
+    <!-- Pagination Settings -->
+    <section id="layout_settings">
+    
+		<div class="page-header"><h3>Layout settings</h3><div class="notop"></div>
+        
+        <p>In this tab section you can compose your grid layout by dragging and dropping available elements.<br>
+        Available elements will depend of the grid layout and of the filter areas.</p>
+        
+        <p>The grid layout have 6 differents area where you can place elements.</p>
+        
+        <img height="500" src="assets/images/grid-layout.jpg">&nbsp;&nbsp;
+        <img height="500" src="assets/images/grid-layout-settings-2.jpg"> 
+        
+        <p>In each of these areas you will find settings to horizontally align elements inside area and to add some margin/padding and a background-color.<br>
+        Left and Right areas are only available in Horizontal (slider) mode.</p>
+        
+        <img height="100" src="assets/images/grid-layout-settings.jpg"> 
+        
+        <p><strong>Grid Layout - </strong>The Grid offer 2 kinds of layout:</p>
+        <ul>
+        	<li>Vertical</li>
+            <li>Horizontal (slider)</li>
+        </ul>
+        
+        <p>In vertical layout, you have the possibility to force the grid to fill the entire width of the browser.<br>
+        With horizontal layout, you have an additional option to force the grid to fill the full height of the browser window. In that way, with horizontal mode, you can have a grid slider which fill the entire browser screen responsively.</p>
+        
+        <img height="620" src="assets/images/grid-layout-style.jpg"> 
+        
+        <p>When you activate the horizontal layout, new options will appear at the bottom of this section to setup the slider.</p>
+        
+        <img height="295" src="assets/images/grid-slider-settings.jpg"> 
+        
+        <p>In horizontal layout (slider) if you are in grid style mode then you will have the possibility to set the number of rows to display inside the slider.<br>
+        In Masonry style, you can only have a 1 row slider because each element can have a different height (so, a row doesn't have a known height).</p>
+        
+        <p>The slider comes with 4 item navigations:</p>
+        <ul>
+        	<li>Free mode (no navigation selected - empty option)</li>
+            <li>Basic</li>
+            <li>Centered</li>
+            <li>Force centered</li>
+        </ul>
+        
+        <img height="480" src="assets/images/slider-navigation.jpg"> 
+        
+        <p>You have the possibility to start the slider to a certain position with the option "Slider Start at".<br>
+        You can also auto play the slider and setup the autoplay speed.</p>
+        
+    </section>
+    
+    <!-- Skins Settings -->
+    <section id="skin_settings">
+    
+		<div class="page-header"><h3>Skin settings</h3><div class="notop"></div>
+        
+        <p><strong>N.B</strong>: You will find in the main downloadable .zip package on CodeCanyon (under download section), several custom skins which replicate all native skins provide with The Grid</p>
+        
+        <h4>Item Skin</h4>
+        
+        <p>In this tab section you can set appearance of elements inside the grid for each post types.<br>
+        You will find a dropdownlist to select the post type for which you want to select a skin.</p>
+        
+        <p>Depending if you are on Masonry or Grid layout, available skins will be different.</p>
+        <p><strong>Masonry Skins:</strong></p>
+        <img height="480" src="assets/images/grid-skins.jpg">
+        <p><strong>Grid Skins:</strong></p>
+        <img height="480" src="assets/images/grid-skins-2.jpg">
+        
+        <p>Just click on the desired skin to select it.</p>
+        
+        <p>You also have the possibility to add a skin per item in the grid. In each edit page of a post type you will find a box where you can select a skin for the current post.<br>
+        These settings are also available in the preview mode by clicking on the setting icon. When a skin is selected for a post then it will override the default skin set in the Grid Admin panel.</p>
+        
+        <img height="480" src="assets/images/item-skin.jpg">
+        
+        <p><strong>Skin colors - </strong> You will find two color palettes to add custom colors to the skins.</p>
+        <ul>
+        	<li>Content Background Color</li>
+            <li>Overlay Background Color</li>
+        </ul>
+        
+        <p>Content Background color corresponds to the background color where the excerpt of the post is displayed.<br>
+        Opposed as the overlay background color which corresponds to the background over an image.<br>
+        For each of these background colors you can set an associated color scheme. This color scheme can be this in <a href="#global_settings">Global Options</a></p>
+        
+        <img height="200" src="assets/images/skin-background-colors.jpg"><br>
+        <img height="500" src="assets/images/skin-colors.jpg">
+        
+        <h4>Navigation Skin</h4>
+        
+        <p>The Grid comes with 7 navigation styles. Navigation correspond to the buttons, dropdown lists, slider arrows,...</p>
+        
+        <img height="300" src="assets/images/navigation-skins.jpg"><br>
+        <img height="300" src="assets/images/navigation-skins-ex.jpg">
+        
+        <p>You can customized colors of the navigations elements thanks to the colors palettes. You have the possibility to set this color for inactive and active state.<br>
+        Navigation background color is only available for background styles.</p>
+        
+        
+    </section>
+    
+    <!-- Animations Settings -->
+    <section id="animations_settings">
+    
+		<div class="page-header"><h3>Animations settings</h3><div class="notop"></div>
+        
+        <p>The grid offer more than 40 animation styles to animate items while filtering, sorting, searching, revealing, etc...<br>
+        Just select an animation from the dropdown list and adjust the animation speed in ms thanks to the range slider.</p>
+        
+        <img height="480" src="assets/images/grid-item-animations.jpg">
+        
+    </section>
+    
+    <!-- Ajax Settings -->
+    <section id="ajax_settings">
+    
+		<div class="page-header"><h3>Load/Ajax settings</h3><div class="notop"></div>
+        
+        <h4>Load More items with ajax (button and scroll methods)</h4>
+        
+        <p>With The Grid, you can add a load more button in order to load more items in the grid with ajax.<br>
+        You can set the number of items to load by clicking on the load more button and also adjust the delay between each new item appended in the grid.<br>
+        If you want to use the <strong>load more button</strong>, you must add it in one of the available area in the Layout tab.<br>
+        In the load more button you also have the possibility to show the number of items that remain.</p>
+        
+        <img height="300" src="assets/images/grid-load-more.jpg">
+        <img height="300" src="assets/images/grid-load-more-button.jpg">
+        
+        <p>When <strong>On scroll</strong> option is activated, new items will be loaded when the end of the grid container will be reach on scroll.<br>
+        If you put the load more button, it will be used to indicate that new items are currently loaded. Otherwise, a message will be shown at the bottom of the grid.</p>
+        
+        <h4>Preload items in the grid (images)</h4>
+        
+        <p>The Grid needs to wait that all images are correctly loaded before executing the rest of the script in order to correctly calculated item sizes (in masonry mode).<br>
+        Because there is a delay between images finished loading, the grid will not looks like good during this delay.<br>
+        In order to make the loading time more attractive, you can add a preloader animation until the images are loaded.</p>
+        
+        <p>The Grid comes with more than <strong>13 preloader css3 animations</strong></p>
+        
+        <img height="450" src="assets/images/grid-preloader.jpg">
+        
+        <p>At first you need to activate the preload option in order to get acces to the list of all preloaders.<br>
+        Just select a preloader and directly get a live preview of it. You can adjust the size of the preloader animation and its color.</p>
+        
+        <p>As for ajax loading, you can add a delay between each item when they appear in the grid.<br>
+        If no delay is setup in <strong>Preloader item delay</strong> then all items will appear at the same time.</p>
+        
+    </section>
+    
+    <!-- Custom CSS/JS code -->
+    <section id="custom_css_js_code">
+    
+		<div class="page-header"><h3>Custom CSS/JS code</h3><div class="notop"></div>
+        
+		<p>If you have some knowledge in css or jquery then you can add some custom scripts in this section.<br>
+        When adding custom css code, we highly recommend to target the element to customize with the css grid name that you can set in the general tab.<br>
+        This will prevent to apply the same style to all grid in the same page.</p>
+        
+        <img height="520" src="assets/images/grid-custom-scripts.jpg">
+        <img height="480" src="assets/images/grid-css-name.jpg">
+        
+        <h4>Examples :</h4>
+
+		<h5>Date/Category/terms colors:</h5>
+        <pre rel="CSS" class="language-css line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-css">/*** Date/Category/terms colors ***/
+.mycss-grid-name .tg-item-date,
+.mycss-grid-name .tg-cats-holder,
+.mycss-grid-name .tg-item-date *,
+.mycss-grid-name .tg-cats-holder * {
+	color: #e6ae48 !important; /*** change color here  ***/
+}</code></pre>
+
+<h5>Quote/link title color on mouse hover:</h5>
+<pre rel="CSS" class="language-css line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-css">/*** quote/link title color on mouse hover ***/
+.mycss-grid-name .quote-format h2:hover a,
+.mycss-grid-name .link-format h2:hover a {
+	color: #e6ae48 !important;
+	opacity: 1;
+}</code></pre>
+
+<h5>Quote/link background color on mouse hover:</h5>
+<pre rel="CSS" class="language-css line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-css">/*** quote/link background color on mouse hover ***/
+.mycss-grid-name .tg-item:hover .tg-item-content-holder.link-format,
+.mycss-grid-name .tg-item:hover .tg-item-content-holder.quote-format {
+	background-color: rgba(22,22,22,0.9) !important; 	
+}</code></pre>
+
+<h5>Quote/link heart liked color:</h5>
+<pre rel="CSS" class="language-css line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-css">/*** quote/link heart liked color ***/
+.mycss-grid-name .to-post-like.liked path {
+	fill: #ffffff !important;
+  	stroke: #ffffff !important;
+}</code></pre>
+
+
+<h5>Mediaelement Video/Audio player controls colors:</h5>
+<pre rel="CSS" class="language-css line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-css">/*** mediaelement Video/Audio player controls colors ***/
+.mejs-controls .mejs-time-rail .mejs-time-current,
+.mejs-controls .mejs-volume-slider .mejs-volume-current,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input:checked + label,
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li:hover label,
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label.active {
+	background-color: rgba(47,191,193,1) !important;
+	color: #ffffff !important;
+}</code></pre>
+        
+    </section>
+    
+    
+    <!-- Custom CSS/JS code -->
+    <section id="term_color">
+    
+    	<div class="page-header"><h3>Term/Category color</h3><div class="notop"></div>
+        
+        <p>The Grid also include some options in every terms (like category, tag, format, ...) to add color.</p>
+        
+        <img height="480" src="assets/images/term-color.jpg">&nbsp;&nbsp;
+        <img height="480" src="assets/images/term-color2.jpg">
+        
+        <p>This color can be used in a skin to highlight term/category as you can see in the above screenshot.</p>
+    
+    
+    </section>
+    
+    <!-- Global settings -->
+    <section id="global_settings">
+    
+		<div class="page-header"><h3>Global Settings</h3><div class="notop"></div>  
+        
+        <p>In this admin panel you will find general options about The Grid plugin:</p>
+        
+        <ul>
+        	<li>Color Schemes options</li>
+            <li>Image sizes options</li>
+            <li>Lightbox settings</li>
+            <li>Mediaelement options</li>
+            <li>Smart resize option</li>
+            <li>Caching system</li>
+        </ul>
+
+        <img height="640" src="assets/images/global-settings-panel.jpg">
+        
+        <h5>Color schemes :</h5>
+        
+        <p>Previously, in the section <a href="#skin_settings">Skin Settings</a> we have talk about how to apply a color scheme to a skin. These text colors can be setup in this admin panel.<br>
+        There are 2 color scheme: dark and light. For each color scheme you can set the color title, the paragraph color and the sub-element color like span tag (category, date,...).<br>
+        </p>
+        
+        <img height="200" src="assets/images/global-color-scheme.jpg">
+        
+        <h5>Image sizes :</h5>
+        
+        <p>You have the possibility to add and customize 5 additional image sizes that we added in the Grid Plugin.<br>
+        These image sizes can be used in the <a href="#media_settings">media tab</a> when creating/editing a skin.<br>
+        </p>
+        
+        <img height="520" src="assets/images/global-image-size.jpg">
+        
+        <p><strong>N.B. :</strong> If you have uploaded images before installing the grid plugin and you want to use this image sizes then you must regenerate your images with a plugin like <a href="https://wordpress.org/plugins/regenerate-thumbnails/" target="_blank">Regenerate Thumbnails Plugin</a>.</p>
+        
+        <h5>LightBox :</h5>
+        
+        <p>The Grid include it's own ligthbox plugin. This lightbox is compatible with image and hosted/embed(youtube,vimeo) video.<br>
+        You can customize the lightbox color from the Grid.</p>
+        
+        <img height="605" src="assets/images/lightbox-settings.jpg">
+        
+        <p>If you are currently using another lightbox plugin and that you want to keep using it, The Grid is also compatible with these two lightbox plugins:</p>
+        
+        <ul>
+        	<li>FancyBox Plugin</li>
+            <li>Prettyphoto plugin</li>
+        </ul>
+        
+        <h5>Medialement :</h5>
+        
+        <p>Mediaelement is an html audio/video jquery plugin natively included in Wordpress. It allows to play hosted audio and video media in a customizable interface.<br>
+        The grid is compatible with Mediaelement. Because mediaelement is a native functionality of Wordpress, most of developers include it in themes.<br>
+        So by using mediaelement, you maybe already have a stylesheet included in your theme that apply style to the mediaelement player.<br>
+        This styles can create conflict with the grid plugin. Our plugin will try to remove this style sheet (when you activate Add Mediaelement Grid StyleSheet) but if the styles are included in the main style sheet of a theme then conflicts can appear.<br>
+        We cannot be reponsible of these type of issues because it's an unevitable conflict. In that case you should contact the theme author to ask how and where he add styles for mediaelement.</p>
+        
+        <img height="320" src="assets/images/global-mediaelement.jpg">
+        
+        <h5>Smart resize : </h5>
+        
+        <p>By using smart resize, you will reduce the number of calculation during resizing the browser.<br>
+		This allows you to improve performance while resizing browser.<br>
+		This feature can create an horizontal scrollbar during resizing depending of the theme layout.
+		If you encounter any problem, please deactivate this option.<br>
+        
+        <h5>Caching System : </h5>
+        
+        <p>We created a caching system in order to increase performances and reduce the loading time.<br>
+        When the cache is enable, the grid will become static and if new post is added then it will not appears in the grid.<br>
+        You need to clear the cache every time you change something to a post (change image, title, content,...) or create/remove a post.<br>
+        When a grid is save, then the cache for this grid is clear. You can manually clear the cache in the global settings panel.</p>
+        
+        <img height="175" src="assets/images/global-cache.jpg">
+        
+        <p><strong>N.B. : </strong>If you are already using a cache plugin, then you don't need to activate this cache option. If you frequently update/add posts then you should not use this option.</p>
+        
+		<h5>Debug Mode : </h5>
+        
+        <p>The Grid use minify file on front end in order to reduce file sizes. So, if there is some issue in the script, it will be hard for us to debug.<br>
+        That's the reason we created a debug mode in order to easly identify an issue on your website and to fix it.<br>
+        You should not use this option for performance reason. Only activate this option when you need to debug the plugin.</p>
+         
+		<img height="140" src="assets/images/global-debug-mode.jpg">
+  
+    </section>
+    
+    <!-- Import/export -->
+    <section id="import_export">
+    
+		<div class="page-header"><h3>Import/Export</h3><div class="notop"></div>
+        
+        <p>The Grid comes with built-in export/import functionnalities. In that way, you can easly save your grid and re-import them.</p>
+        
+        <img height="560" src="assets/images/import-export.jpg">
+        
+        <p>To Export a grid, you just need to select one or several grids in the dropdown list. It will generated a .son file with all grid settings.<br>
+        One file can handle multiple grids.</p>
+        
+        <p>To import a grid, you need to upload the .json file created with this importer.<br>
+        You find in the import section 2 buttons, one to import a .json file and an other to import demo data.<br>
+        When importing the demo data, 20 grid examples will be generated. These grid examples can be find on <a href="http://theme-one.com/the-grid/">The Grid live demo</a>.</p>
+        
+    </section>
+    
+    <!-- Grid as template -->
+    <section id="grid_as_template">
+    
+		<div class="page-header"><h3>Use The Grid as a template</h3><div class="notop"></div>
+        
+        <p>You can now with The Grid replace any template which use a main Wordpress query.<br>
+        It means that you can easily replace your index blog page, search & archive template or shop archive page from Woocommerce.<br>
+        The grid will automatically fetched the right content from these templates and displayed items in the grid.</p>
+
+        <p>To replace the index/search/archive templates of your Theme, you need to edit the index/search/archive.php file located at the root folder of your theme:</p>
+        
+        <p>In these files, you will find the main loop:</p>
+        
+        <pre rel="PHP" class="language-css line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">if ( have_posts() ): 
+    while ( have_posts() ): the_post();
+        
+    // some code from your theme
+    // ...
+    // ...
+        
+    endwhile;
+endif;</code></pre>
+        
+        <p>You just need to replace all the previous php code by this line of code:</p>
+        
+        <pre rel="PHP" class="language-css line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">The_Grid('My Grid Name', true); // where true is for template mode</code></pre>
+        
+        <p>In the grid settings under skin tab, you need to setup the skin used for each post type.<br>
+        The number of item on load present in the grid can be set as usual in <strong>Wordpress > Settings > Reading panel</strong>.<br>
+        You can't control this number the grid settings because it's part of the main query of the current template you are trying to replace (this is how Wordpress works).<br>
+        However, you can control the number of items to load more with ajax method if you are using an ajax pagination or a load more button.</p>
+        
+        <p>You can do the same thing for Woocommerce archive-product.php template. You need at first to <a target="_blank" href="https://docs.woothemes.com/document/template-structure/">replace this archive template by adding it in your theme (or child theme)</a>:<br><br>
+        <strong>theme-folder/woocommerce/archive-product.php</strong><br><br>
+        Then you just need to replace in this file the main loop as explained previously. That's all!</p>
+        
+        <p><strong>N.B.:</strong> For any modification, you should use a <a target="_blank" href="https://codex.wordpress.org/Child_Themes">child theme</a>.<br>
+        If you don't have a child theme then you should ask to the theme author.</p>
+        
+        
+    </section>
+    
+    <!-- Troubleshooting -->
+    <section id="troubleshooting">
+    
+		<div class="page-header"><h3>Troubleshooting</h3><div class="notop"></div>
+        
+        <p>If a grid that you added on a page doesn't display, please check these possible source of issues:</p>
+        <ul>
+        	<li>Check in the Grid panel (overview) if the grid exists. Or if there isn't any typo with the grid name</li>
+            <li>Maybe you have put the grid in a content holder like a tab or an accordion and in that case if the grid was hidden, calculations will be wrong. Just don't put the grid in a content holder that will hide it.</li>
+            <li>Check if you are running the last version of the Grid Plugin and also the last version of Wordpress.</li>
+            <li>Check if there isn't any plugin conflict by deactivating all other plugins.</li>
+		</ul>
+        
+        <p>If you observed some issues with the grid appearance it can be due to a conflict with the theme you are using or with a 3rd party plugin. Some themes add styles and force them for every elements in a page. It can affect the appearance of a grid and generate layout issue. Do not hesitate to open a ticket on our support forum. We will look at your issue.</p>
+        
+        <p>For any issue do not hesitate to contact us on our <a href="https://themeoneticket.ticksy.com/">SUPPORT FORUM</a>.</p>
+        
+    </section>
+    
+    <!-- Developer Guide -->
+    <section id="developer_guide">
+    
+		<div class="page-header"><h3>Developer Guide</h3><div class="notop"></div>
+        
+        <p>The Grid Plugin is developer friendly. We have included several filters to easly integrate the grid in your theme or to create a 3rd party plugin based on The Grid Plugin.<br>
+        In this section we will explain to you how to:</p>
+        
+        <ul>
+        	<li><a href="#create_skin">Add an item skin</a></li>
+            <li><a href="#navigation_skin">Add a naviagtion skin</a></li>
+            <li><a href="#item_animation">Add an item annimation</a></li>
+            <li><a href="#preloader_animation">Add a preloader animation</a></li>
+            <li><a href="#transient">Change cache/transient expiration</a></li>
+            <li><a href="#query_filter">Change query argument of post type loop</a></li>
+        </ul>
+        
+        <section id="create_skin">
+        
+        <h5>Add an item skin</h5>
+        
+        <p>There are 2 ways to add a new item skin. You can use our filter and specify the directory where you added the .php and .css files to build the skin or you can directly add a new directory in your theme (not work with a plugin).</p>
+        
+        
+        <h6><u>Add directly new skins in a predefined theme directory</u></h6>
+        
+        <p>If you want to add new skin directly in your theme you just need to create a new folder at the root folder of your theme. This directory must be called <strong>"the-grid"</strong>.<br>
+        In this folder you must add your skin(s) in a subfolder call <strong>"masonry"</strong> or <strong>"grid"</strong>. The sub-folder will depend name if you want to add a masonry or a grid skin.
+        Then create a new folder name with the slug name an put your .css and .pph file inside it.</p>
+        
+        &emsp;<img height="20" src="assets/images/folder.png" style="vertical-align: top;"/> My-theme<br>
+			&emsp;&emsp;&emsp;<img height="20" src="assets/images/folder.png" style="vertical-align: top;"/> the-grid<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;<img height="20" src="assets/images/folder.png" style="vertical-align: top;"/> masonry<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img height="20" src="assets/images/folder.png" style="vertical-align: top;"/> my-skin1<br>
+                    	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img height="20" src="assets/images/css-file.png" style="vertical-align: top;"/> my-skin1.css<br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img height="20" src="assets/images/php-file.png" style="vertical-align: top;"/> my-skin1.php<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;<img height="20" src="assets/images/folder.png" style="vertical-align: top;"/> grid<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img height="20" src="assets/images/folder.png" style="vertical-align: top;"/> my-skin2<br>
+                    	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img height="20" src="assets/images/css-file.png" style="vertical-align: top;"/> my-skin2.css<br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img height="20" src="assets/images/php-file.png" style="vertical-align: top;"/> my-skin2.php<br>
+
+
+		<p>Now you have included these files inside your theme, you need to register your skins.<br>
+        You can register your skin(s) by adding this code in your main function.php file of theme (or child theme):</p>
+        
+		<pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">add_filter('tg_register_item_skin', function($skins) {
+	
+    // just push your skin slugs (file name) inside the registered skin array
+    $skins = array_merge($skins,
+        array(
+            'my-skin1' => array(
+                'filter'   => 'My Filter', // filter name used in slider skin preview
+                'name'     => 'My Skin Name', // Skin name used in skin preview label
+                'col'      => 1, // col number in preview skin mode
+                'row'      => 1  // row number in preview skin mode
+            )
+        )
+    );
+    
+    // return all skins + the new one we added (my-skin1)
+    return $skins;
+	
+});</code></pre>    
+		
+        <p><strong>N.B. : </strong>With this filter you will also be able to unregister native skins from the grid by removing them from the array.</p><br> 
+        
+		<h6><u>OR add your skin files in a custom directory</u></h6>
+         
+		<p>You can also use the below filter to declare your skins files. So you can place the skin files everywhere you want.</p>
+        
+		<pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">// add a skin in a plugin/theme
+add_filter('tg_add_item_skin', function($skins) {
+
+    $PATH = get_stylesheet_directory();
+	
+    // register a skin and add it to the main skins array
+    $skins['new_skin1'] = array(
+        'type'   => 'masonry',
+        'filter' => 'your-filter',
+        'slug'   => 'new_skin1',
+        'name'   => 'new skin 1',
+        'php'    => $PATH . '/your_path/new_skin1.php',
+        'css'    => $PATH . '/your_path/new_skin1.css',
+        'col'    => 1, // col number in preview skin mode
+        'row'    => 1  // row number in preview skin mode
+    );
+    
+    // register a skin and add it to the main skins array
+    $skins['new_skin2'] = array(
+        'type'   => 'grid',
+        'filter' => 'your-filter',
+        'slug'   => 'new_skin2',
+        'name'   => 'new skin 2',
+        'php'    => $PATH . '/your_path/new_skin2.php',
+        'css'    => $PATH . '/your_path/new_skin2.css',
+        'col'    => 1, // col number in preview skin mode
+        'row'    => 1  // row number in preview skin mode
+    );	
+	
+    // return the skins array + the new one you added (in this example 2 new skins was added)
+    return $skins;
+    
+});</code></pre><br>
+
+		<h6><u>Create a new skin</u></h6>
+        
+        <p>In the section above we have explained how to register your skins and now we will explain to you how to create a skin.<br>
+        A skin consist of 2 files:</p>
+        <ul>
+        	<li>a CSS file to customize your markup</li>
+            <li>a PHP file to build the item skin (the markup and retrieve content)</li>
+        </ul>
+        
+        <p>We have created an API in order to easily retrieve for each item whatever the source type like the title, the excerpt, the date, the comments numbers, images, ...<br>
+        This API will be very helpful to take full control of functionalities provided by The Grid Plugin.<br> 
+        Because each skin in The Grid plugin are compatible with video & audio content (with custom play button), we highly recommend to use this API.</p>
+        
+        <p>To retrieve data from the API, you need at first to initialize the API class from our single class instance like this:</p>
+        
+		<pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">// You must store the grid element instance in a var to retrieve data
+$tg_el = The_Grid_Elements();</code></pre>
+
+		 <p>You will be able to get all necessary content from this instance.<br>
+         You will find below the complete list of all functions which allow to output content related to item content.<br>
+         All content output thanks to these functions are already escaped.<br>
+         Some of these functions accepts an array of arguments in order to setup the output.<br>
+         <strong>Click on info to see what it will return (it doesn't echo):</strong></p>
+        
+
+		<pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">// center/content wrapper markup
+/**[info](http://#center_wrapper_start)**/ $tg_el->get_center_wrapper_start(); // to center any content inside
+/**[info](http://#center_wrapper_end)**/ $tg_el->get_center_wrapper_end();
+/**[info](http://#content_wrapper_start)**/ $tg_el->get_content_wrapper_start(); // to put main post content like (title, excerpt, author, comments,...) automatically aplly colors
+/**[info](http://#content_wrapper_end)**/ $tg_el->get_content_wrapper_end();
+/**[info](http://#media_wrapper_start)**/ $tg_el->get_media_wrapper_start(); // to put media_markup inside it (image, audi, video)
+/**[info](http://#media_wrapper_end)**/ $tg_el->get_media_wrapper_end();
+		
+// main content/data
+/**[info](http://#overlay)**/ $tg_el->get_overlay(); // overlay background markup (get color automatically)
+/**[info](http://#content)**/ $tg_el->get_the_excerpt($args); // excerpt
+/**[info](http://#title)**/ $tg_el->get_the_title();
+/**[info](http://#date)**/ $tg_el->get_the_date($args);
+/**[info](http://#terms)**/ $tg_el->get_the_terms($args); // all kinds of post terms (like category) with link and colors (if 'term_color' = true)
+/**[info](http://#comments)**/ $tg_el->get_the_comments_number($args);
+/**[info](http://#author)**/ $tg_el->get_the_author($args);
+/**[info](http://#read_more)**/ $tg_el->get_read_more_button($args);
+/**[info](http://#media_button)**/ $tg_el->get_media_button($args); // play button for video/audio
+/**[info](http://#link_button)**/ $tg_el->get_link_button($args);
+/**[info](http://#media_type)**/ $tg_el->get_item_format();
+/**[info](http://#post_like)**/ $tg_el->get_the_likes_number(); // our built-in post like system
+/**[info](http://#social_links)**/ $tg_el->get_social_share_links(); // Facebook, Twitter, Google+, Pinterest sharer button (works automatically)
+/**[info](http://#colors)**/ $tg_el->get_colors(); // retrieve all colors in an array
+
+// media markup (image, gallery, video, audio) depends of post format
+/**[info](http://#media_markup)**/ $tg_el->get_media(); // the ost usefull part to retrieve all media (image/video/audio) depending on format
+
+// quote/link markup depends of post format
+/**[info](http://#link_markup)**/ $tg_el->get_the_link_format();
+/**[info](http://#quote_markup)**/ $tg_el->get_the_quote_format();
+
+// retrieve main link (from post or custom link set in meta box)
+/** url    **/ $tg_el->get_the_permalink(); // url, custom or post link
+/** string **/ $tg_el->get_the_permalink_target(); // _blank or _self
+
+// get a meta data value for the an item
+$tg_el->get_item_meta('your_metadata_key');
+
+// get the item ID
+$tg_el->get_item_ID();
+
+// get all item data
+$tg_el->get_item_data(); // output an array with all item data (title, link, image, video, etc...)
+
+	
+// Woocommerce data
+/**[info](http://#product_price)**/ $tg_el->get_product_full_price();
+/**[info](http://#product_rating)**/ $tg_el->get_product_rating();
+/**[info](http://#product_sale)**/ $tg_el->get_product_on_sale();
+/**[info](http://#product_cart_button)**/ $tg_el->get_product_cart_button();
+/**[YITH plugin](https://fr.wordpress.org/plugins/yith-woocommerce-wishlist)**/ $tg_el->get_product_wishlist();</code></pre> 
+        
+        <p>And here a <strong>full example</strong> to build a grid skin (Brasilia skin example) thanks to the above function : </p>
+        
+		<pre rel="PHP - new-skin.php" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">// initialization of the instance
+$tg_el = The_Grid_Elements();
+
+$format    = $tg_el->get_item_format();
+$permalink = $tg_el->get_the_permalink();
+$target    = $tg_el->get_the_permalink_target();
+
+$terms_args = array(
+    'color' => 'color',
+    'separator' => ', '
+);
+
+$output  = $tg_el->get_media_wrapper_start();
+    $output .= $tg_el->get_media();
+    $output .= $tg_el->get_overlay();
+    $output .= '&#60;div class="tg-item-content">';
+        $output .= ($permalink && !in_array($format, array('video', 'audio'))) ? '&#60;a class="tg-item-link" href="'.$permalink .'" target="'.$target.'">&#60;/a>' : null;
+        $output .= $tg_el->get_the_terms($terms_args);
+        $output .= $tg_el->get_the_title();
+        $output .= '&#60;div class="tg-item-footer">';
+            $output .= $tg_el->get_the_author();
+            $output .= $tg_el->get_media_button();
+        $output .= '&#60;/div>';
+    $output .= '&#60;/div>';
+$output .= $tg_el->get_media_wrapper_end();
+		
+return $output;</code></pre><br>      
+
+	<p>Of course, you can do exactly the same things with your own markup and the std wordpress function.<br>
+    However, you must add an alternative content for all data you retrieve in order to display it in the backend admin (for the skin preview).<br>
+    We added a global variable which is set to true when the current skin is retrieved for the preview (slider) in the backend.<br></p>
+    
+    <p><strong>N.B.:</strong> When retrieving data in a skin, you are not in a Wordpress loop (from a query) but in a custom loop from The Grid API.<br>So you must use the item ID to use native function of Wordpress like get_the_title();</p>
+
+	<pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">// As example to retrieve the post title
+// global var to check if the skin is used for the preview mode
+global $tg_skins_preview;
+
+$tg_el = The_Grid_Elements();
+
+$item_ID = $tg_el->get_item_ID();
+
+$title = (!$tg_skins_preview) ? get_the_title($item_ID) : 'The Post Title';
+    
+$html  = '&#60;h2 class="tg-item-title">';
+    $html .= '&#60;a href="'.get_permalink().'">' . $title . '&#60;/a>';
+$html .= '&#60;/h2>';</code></pre>
+
+	<p>In that way, 'The Post Title' will be displayed in the grid skins preview in the backend instead of an empty string.<br>
+    You don't need to use this method for custom metadata. The Grid will automatically display the metakey in skin preview mode.</p>
+
+	<img height="560" src="assets/images/grid-skin-backend.jpg">
+    
+    <p>Now you have built the markup, you just need to apply some styles to the skin.<br>
+    You must use the skin slug (file name) in order to target your classes to prevent any conflicts with other skins:</p>
+    
+    	<pre rel="CSS - new-skin.css" class="language-css line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-css">.my-skin-slug .tg-item-content,
+.my-skin-slug .tg-item-media-holder,
+.my-skin-slug .tg-item-overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}</code></pre>
+
+	<p><strong>N.B. : </strong>You will find all skins in the directory <strong>the-grid > includes > item-skins</strong>. You can start from one of this skin to build yours.</p>
+
+
+<div style="display:none">
+
+
+<pre id="center_wrapper_start" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="tg-center-outer">
+	&#60;div class="tg-center-inner"></code></pre>
+            
+<pre id="center_wrapper_end" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+	&#60;/div>
+&#60;/div></code></pre>
+
+<pre id="content_wrapper_start" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="tg-item-content-holder"></code></pre>
+
+<pre id="content_wrapper_end" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;/div></code></pre>
+
+<pre id="media_wrapper_start" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="tg-item-media-holder"></code></pre>
+
+<pre id="media_wrapper_end" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;/div></code></pre>
+		
+<pre id="overlay" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="tg-item-overlay">&#60;/div></code></pre>
+
+
+<pre id="content" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- 
+args = array(
+    'length' => 240,  // excerpt length (number of characters)
+    'suffix' => '...' // excerpt suffix added at the end of the excerpt
+);
+output: -->
+&#60;p class="tg-item-excerpt">The excert....&#60;/p></code></pre>
+
+<pre id="title" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;h2 class="tg-item-title">
+	&#60;a href="post_permalink">Post Title&#60;/a>
+&#60;/h2></code></pre>
+
+<pre id="date" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!--
+args = array(
+    'format' => 'Y-m-d H:i:s', // date format, only works with post type (http://php.net/manual/fr/function.date.php)
+);
+output: -->
+&#60;span class="tg-item-date">The Date&#60;/span></code></pre>
+
+<pre id="terms" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!--
+$args = array(
+    'link'      => true,    // enable or not link for terms
+    'color'     => 'color', // use terms 'color', 'background' or 'none'
+    'separator' => ', '     // separator use between each term
+);
+output: -->
+&#60;div class="tg-cats-holder">
+	&#60;a class="category" href="term_url" rel="category tag">
+    	&#60;span>Term&#60;/span>
+	&#60;/a>
+&#60;/div></code></pre>
+
+<pre id="comments" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- 
+$args = array(
+    'icon' => '&#60;i class="tg-icon-chat">&#60;/i>'  // comment icon
+);
+output: -->
+&#60;a class="tg-item-comment" data-comment-id="181" href="coment_url_hash">Nb Comments&#60;/a></code></pre>
+
+<pre id="author" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- 
+$args = array(
+    'prefix' => 'by ', // add prefix before the author name
+    'avatar' => true,  // add author avatar image before autohr name
+);
+output: -->
+&#60;span class="tg-item-author">
+	&#60;span>By &#60;/span>&#60;a href="author_url">Author&#60;/a>
+&#60;/span></code></pre>
+
+<pre id="read_more" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- 
+$args = array(
+    'text' => 'Read More' // read mor text
+);
+output: -->
+&#60;div class="tg-item-read-more">
+	&#60;a href="post_permalink">Read More&#60;/a>
+&#60;/div></code></pre>
+
+<pre id="link_markup" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;h2 class="tg-link-content tg-item-title">
+	&#60;a href="the_post_permalink">link_content&#60;/a>
+&#60;/h2></code></pre>
+
+<pre id="quote_markup" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;h2 class="tg-quote-content tg-item-title">
+	&#60;a href="the_post_permalink">the_quote_content&#60;/a>
+&#60;/h2>
+&#60;span class="tg-quote-author">quote_author&#60;/span></code></pre>
+
+<pre id="media_button" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- 
+$args = array(
+    'icons' => array(
+        'image' => '&#60;i class="tg-icon-add">&#60;/i>'  // lightbox image icon
+        'audio' => '&#60;i class="tg-icon-play">&#60;/i>' // audio play icon
+        'video' => '&#60;i class="tg-icon-play">&#60;/i>' // video play icon
+    )
+);
+output: -->
+&#60;div class="tg-media-button tg-item-button-play">your_icon_markup&#60;/div></code></pre>
+
+<pre id="link_button" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- 
+$args = array(
+    'icon' => '&#60;i class="tg-icon-link">&#60;/i>'  // link button icon
+);
+output: -->
+&#60;a class="tg-link-button" href="the_post_permalink">your_icon_link&#60;/a></code></pre>
+
+<pre id="media_markup" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- $output depending of the post format: -->
+
+
+&#60;!-- Image (standard format) -->
+&#60;!-- Masonry style -->
+&#60;div class="tg-item-image" style="background-image: url('image.png')">&#60;/div>
+&#60;!-- Grid style --> 
+&#60;img class="tg-item-image" alt="" width="" height="" src="image.png">
+&#60;!-- Alternative Woocommerce image --> 
+&#60;div class="tg-item-image tg-alternative-product-image" style="background-image: url('image.png')">&#60;/div>
+
+&#60;!-- Gallery (Gallery format) -->
+&#60;!-- Masonry style --> 
+&#60;div class="tg-item-gallery-holder">
+	&#60;img class="tg-item-image" alt="" width="" height="" src="image.png">
+	&#60;div class="tg-item-image" style="background-image: url('image.png')">&#60;/div>
+	&#60;div class="tg-item-image" style="background-image: url('image.png')">&#60;/div>
+&#60;/div>
+&#60;!-- Grid style -->
+&#60;div class="tg-item-gallery-holder">
+	&#60;div class="tg-item-image" style="background-image: url('image.png')">&#60;/div>
+	&#60;div class="tg-item-image" style="background-image: url('image.png')">&#60;/div>
+	&#60;div class="tg-item-image" style="background-image: url('image.png')">&#60;/div>
+&#60;/div>
+
+&#60;!-- Youtube (video format) -->
+&#60;div class="tg-item-media-inner" data-ratio="16:9">
+	&#60;iframe class="tg-item-youtube tg-item-media" src="youtube" id="youtube-id" allowfullscreen>&#60;/iframe>
+&#60;/div>
+
+&#60;!-- Vimeo (video format) -->
+&#60;div class="tg-item-media-inner" data-ratio="16:9">
+	&#60;iframe class="tg-item-vimeo tg-item-media" src="vimeo" id="vimeo-id" allowfullscreen>&#60;/iframe>
+&#60;/div>
+
+&#60;!-- HTML5 video (video format) -->
+&#60;div class="tg-item-media-inner" data-ratio="16:9">
+	&#60;video class="tg-item-video-player tg-item-media" poster="poster.png" controls>
+		&#60;source src="video.mp4" type="video/mp4">  
+		&#60;source src="video.ogv" type="video/ogv"> 
+		&#60;source src="video.webm" type="video/webm"> 
+	&#60;/video>
+&#60;/div>
+
+&#60;!-- HTML5 audio (audio format) -->
+&#60;div class="tg-item-media-inner">
+	&#60;audio class="tg-item-audio-player tg-item-media" controls>
+		&#60;source src="song.mp4" type="audio/mp4">
+		&#60;source src="song.ogg" type="audio/ogg">
+	&#60;/audio>
+&#60;/div>
+
+&#60;!-- SoundCloud (audio format) -->
+&#60;div class="tg-item-media-inner" data-ratio="4:3">
+	&#60;iframe id="soundcloud-id" class="tg-item-soundcloud tg-item-media" src="soundcloud">&#60;/iframe>
+&#60;/div></code></pre>
+
+<pre id="media_type" rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">&#60;!-- output: -->
+(string) 'standard' || 'image || gallery || audio || video';</code></pre>
+
+<pre id="post_like" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;span class="to-post-like" data-post-id="178" title="Like">
+	&#60;svg>&#60;/svg>
+	&#60;span class="to-like-count">0&#60;/span>
+&#60;/span></code></pre>
+
+<pre id="social_links" rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">&#60;!-- output: -->
+array(
+    'facebook'  => '&#60;a href="#" class="tg-facebook">&#60;i class="tg-icon-facebook">&#60;/i>&#60;/a>',
+    'twitter'   => '&#60;a href="#" class="tg-twitter">&#60;i class="tg-icon-twitter">&#60;/i>&#60;/a>',
+    'google+'   => '&#60;a href="#" class="tg-google1">&#60;i class="tg-icon-google-plus">&#60;/i>&#60;/a>',
+    'pinterest' => '&#60;a href="#" class="tg-pinterest">&#60;i class="tg-icon-pinterest">&#60;/i>&#60;/a>'
+),</code></pre>
+
+<pre id="colors" rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">&#60;!-- output: -->
+array(
+    'content' => array(
+        'class' => 'dark',
+        'title' => '#444444',
+        'text'  => '#777777',
+        'span'  => '#777777',
+        'background' => 'rgba(22,22,22,0.65)'
+    ),
+    'overlay' => array(
+        'class' => 'light',
+        'title' => '#ffffff',
+        'text'  => '#f6f6f6',
+        'span'  => '#f5f5f5' ,
+        'background' => 'rgba(0,0,0,0.85)'   
+    ),
+);</code></pre>
+
+<pre id="product_price" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="tg-item-price">
+	&#60;span class="amount">99$&#60;/span>
+&#60;/div></code></pre>
+            
+<pre id="product_rating" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="tg-item-rating">
+	&#60;div class="star-rating">
+		&#60;span style="width:90%">&#60;/span>
+	&#60;/div>
+&#60;/div></code></pre>
+
+
+<pre id="product_sale" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="tg-item-on-sale light">
+	&#60;span class="onsale">Sale!&#60;/span>
+&#60;/div></code></pre>
+
+<pre id="product_cart_button" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="tg-item-cart-button">
+	&#60;a href="" rel="nofollow" class="button add_to_cart_button product_type_simple">Add to cart&#60;/a>
+&#60;/div></code></pre>
+
+<pre id="product_cart_button" id="product_cart_button" rel="HTML" class="language-markup line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-markup">&#60;!-- output: -->
+&#60;div class="yith-wcwl-add-to-wishlist add-to-wishlist-300">You should look at YITH doc&#60;/div></code></pre> 
+
+
+</div>
+
+</section>
+
+	<section id="navigation_skin">
+        
+        <h5>Add a navigation skin</h5>
+        
+        <p>Adding a navigation skin (for filter button, load more button, page, dropdown list, ...) consist of applying new css rules to existing markup.<br>
+        We included a filter to register custom css for this elements. In this filter you will be able to get all colors options in the admin panel (in the grid builder) under skins tab.</p>
+        
+        <p>Please look at the following example:</p>
+        
+        <pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">add_filter('tg_add_navigation_skin', function($navigations) {
+	
+    // tg-nav-sqr-thick : css classe use to match navigation items
+	$navigations['tg-nav-sqr-thick'] = function() {
+		
+		// global var to retrieve all color options set in the backend
+		global $tg_nav_colors;
+		
+		// name used in the dropdown list to select a navigation skin
+		$navigation['name'] = 'Square Thick';
+        
+		//$tg_nav_colors['css_ID'] css ID (#grid-1234) of the current grid; must be used for colors if several grids (on the same page) with the same navigation skin...
+		
+		$css =  $tg_nav_colors['css_ID'].' .tg-nav-border:hover,
+			'.$tg_nav_colors['css_ID'].' .tg-page-number.tg-page-current,
+			'.$tg_nav_colors['css_ID'].' .tg-filter.tg-filter-active:not(.tg-dropdown-item) {
+				border-color: '.$tg_nav_colors['accent_color'].';
+			}
+			'.$tg_nav_colors['css_ID'].' .tg-nav-border,
+			'.$tg_nav_colors['css_ID'].' .tg-dropdown-holder:hover,
+			'.$tg_nav_colors['css_ID'].' .tg-search-inner:hover,
+			'.$tg_nav_colors['css_ID'].' .tg-sorter-order:hover,
+			'.$tg_nav_colors['css_ID'].' .tg-disabled:hover i {
+				border: 2px solid '.$tg_nav_colors['border_color'].';
+			}
+			'.$tg_nav_colors['css_ID'].' .tg-search-clear,
+			'.$tg_nav_colors['css_ID'].' .tg-search-clear:hover {
+				border: none;
+				border-left: 2px solid '.$tg_nav_colors['border_color'].';
+			}
+			'.$tg_nav_colors['css_ID'].' .tg-nav-color:not(.dots):not(.tg-dropdown-value):not(.tg-dropdown-title):hover,
+			'.$tg_nav_colors['css_ID'].' .tg-nav-color:hover .tg-nav-color,
+			'.$tg_nav_colors['css_ID'].' .tg-page-number.tg-page-current,
+			'.$tg_nav_colors['css_ID'].' .tg-filter.tg-filter-active span:not(.tg-filter-count) {
+				color: '.$tg_nav_colors['accent_color'].';
+			}
+			.tg-nav-sqr-thick .tg-page-number.dots {
+				border: none !important;
+			}
+			.tg-nav-sqr-thick .tg-grid-area-left i,
+			.tg-nav-sqr-thick .tg-grid-area-left i:before,
+			.tg-nav-sqr-thick .tg-grid-area-right i,
+			.tg-nav-sqr-thick .tg-grid-area-right i:before {
+				line-height: 38px;
+			}
+			.tg-nav-sqr-thick input[type=text].tg-search {
+				height: 36px;
+			}
+			.tg-nav-sqr-thick .tg-nav-font,
+			.tg-nav-sqr-thick input[type=text].tg-search {
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 36px;
+			}
+			.tg-nav-sqr-thick .tg-search::-webkit-input-placeholder {
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 36px;
+			}
+			.tg-nav-sqr-thick .tg-search::-moz-placeholder {
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 36px;
+			}
+			.tg-nav-sqr-thick .tg-search:-ms-input-placeholder {
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 36px;
+			}
+			.tg-nav-sqr-thick .tg-page-number.dots,
+			.tg-nav-sqr-thick .tg-slider-bullets {
+				height: 40px;
+			}
+			.tg-nav-sqr-thick .tg-search-icon,
+			.tg-nav-sqr-thick .tg-search-clear,
+			.tg-nav-sqr-thick .tg-sorter-order,
+			.tg-nav-sqr-thick .tg-page-number,
+			.tg-nav-sqr-thick .tg-left-arrow i,
+			.tg-nav-sqr-thick .tg-right-arrow i {
+				min-width: 40px;
+			}
+			.tg-nav-sqr-thick .tg-search-icon,
+			.tg-nav-sqr-thick .tg-sorter-order i {
+				font-weight: 100;
+			}
+			.tg-nav-sqr-thick .tg-page-number.dots,
+			.tg-nav-sqr-thick .tg-search-inner,
+			.tg-nav-sqr-thick .tg-search-clear,
+			.tg-nav-sqr-thick .tg-sorter-order,
+			.tg-nav-sqr-thick .tg-left-arrow,
+			.tg-nav-sqr-thick .tg-right-arrow {
+				border: none;
+			}
+			.tg-nav-sqr-thick .tg-dropdown-list {
+				margin-top: 2px;
+			}
+		';
+		
+		// register the skin
+		$navigation['css'] = $css;
+		
+		// add the skin to others
+		return $navigation;
+	};
+    
+	// return all skins + the new one added
+	return $navigations;
+	
+});</code></pre>
+
+	<p>So it consist just of adding css in a php array.</p>
+    
+    <p><strong>N.B. : </strong>You will find all navigation skins in the directory <strong>the-grid > includes > navigation-skin.class.php</strong>.</p>
+        
+    </section>
+    
+    
+    <section id="item_animation">
+        
+        <h5>Add an item animation</h5>
+        
+        <p>A simple filter to add new kind of animation. Works with any transform properties.</p>
+        
+        <pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">function my_custom_animation($animations) {
+	
+	$animations['from_right_flip_z'] = array(
+		'name'    => __('From Right Flip Z', 'tg-text-domain'), // name used for the dropdown list in the backed
+		'visible' => 'perspective(2000px) translateY(0) rotate3d(0,0,1,0deg) scale(1)', // when item is revealed
+		'hidden'  => 'perspective(2000px) translateX(100px) rotate3d(0,0,1,45deg) scale(0.2)' // when item is hidden
+	);
+    
+	return $animations;
+    
+};
+
+add_filter('tg_add_item_animation', 'my_custom_animation');</code></pre>
+        
+    </section>
+    
+    
+    <section id="preloader_animation">
+        
+        <h5>Add a preloader animation</h5>
+        
+        <p>The following example will show you how to add a new preloader animation (with your own image for example).</p>
+        
+        <pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">add_filter('tg_add_preloader_skin', function($preloaders) {
+	
+	// your preloader slug
+	$preloaders['the-grid-logo'] = function() {
+		
+		// your preloader name use for the dropdown list in the backend
+		$preloader['name'] = 'The Grid Logo';
+		
+		// your preloader html markup
+		$preloader['html'] = '&#60;img src="your-image.png">';
+		
+		// your preloader css
+		$preloader['css'] = '
+			/*** use the slug to target the image (html you added) ***/
+			.the-grid-logo img {
+				max-width: 80px;
+				outline: 1px solid transparent; /*** smooth edge for image in case ***/
+				-webkit-animation: fadeInOut 0.5s ease-in alternate infinite;
+				-moz-animation: fadeInOut 0.5s ease-in alternate infinite;
+				animation: fadeInOut 0.5s ease-in alternate infinite;
+			}
+			@-webkit-keyframes fadeInOut {
+				from { opacity: 0.25; }
+				to { opacity: 1; }
+			}
+			@-moz-keyframes fadeInOut {
+				from { opacity: 0.25; }
+				to { opacity: 1; }
+			}
+			@keyframes fadeInOut {
+				from { opacity: 0.25; }
+				to { opacity: 1; }
+			}'
+		;
+		
+		// add your own preloader to all others
+		return $preloader;
+        
+	};
+	
+	// return all preloader + the one above you added
+	return $preloaders;
+	
+});</code></pre>
+        
+    </section>
+    
+    
+    <section id="transient">
+        
+        <h5>Change cache/transient expiration</h5>
+        
+        <p>The Grid Plugin comes with it's own cache system. You can modify the transient expiration (by default it's 7 days).</p>
+        
+        <pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">function my_custom_transient_expiration() {
+	return 60*60*24*180; // 6 months
+}
+
+add_filter( 'tg_transient_expiration', 'my_custom_transient_expiration' );</code></pre>
+        
+    </section>
+    
+    
+    <section id="query_filter">
+        
+        <h5>Change The Grid query (for post type only)</h5>
+        
+        <p>If you want to add additionnal parameters to the custom query created by The Grid, you can add the following filter in your main function.php file of your theme (or child theme):</p>
+        
+        <pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">function my_query_args($query_args, $grid_name) {
+
+    if ($grid_name == 'My grid name') {
+        // all query parameters can be modified (https://codex.wordpress.org/Class_Reference/WP_Query)
+        $query_args['posts_per_page'] = 2;
+    }
+    
+    return $query_args;
+    
+}
+
+add_filter('tg_wp_query_args', 'my_query_args', 10, 2);</code></pre>
+
+    
+	</section>
+    
+    <section id="skin_builder">
+        
+        <div class="page-header"><h3>Skin Builder</h3><div class="notop"></div>  
+        
+        <ul>
+        	<li><a href="#skin_builder_intro">Introduction</a></li>
+            <li><a href="#edit_skin">Create/Edit a skin</a></li>
+            <li><a href="#skin_layout">Skin layout</a></li>
+            <li><a href="#add_element">Add element</a></li>
+            <li><a href="#save_element">Save element</a></li>
+            <li><a href="#edit_element">Edit element</a></li>
+            <li><a href="#element_styles">Element Styles</a></li>
+            <li><a href="#element_animation">Element Animation</a></li>
+            <li><a href="#element_alignment">Element Alignment</a></li>
+            <li><a href="#element_metadata">Add metadata content</a></li>
+        </ul>
+        
+        <section id="skin_builder_intro">
+        
+        	<h5>Introduction</h5>
+            
+            <p>The skin builder allows to create custom skins with ease thanks to an intuitive drag & drop interface.<br>
+To get start with this functionnality, we highly recommend to import skin demos at first (instead of creating a skin from scratch).</p>
+
+			<img height="200" src="assets/images/skin-builder/1-skin-builder-import.jpg">
+            
+        </section>
+        
+         <section id="edit_skin">
+        
+        	<h5>Create/Edit a skin</h5>
+        
+        	<p>Once you have imported the skin demos or you have started by creating a new skin, you can edit your skin.</p>
+			
+            <img height="620" src="assets/images/skin-builder/2-skin-builder-edit.jpg">
+            
+            <p>At first, you need to give an unique name to your skin. You can also assigned a category name to this skin in order to easily find it in the skin builder overview or in the grid settings admin panel.<br>
+            Each skin is intended to work with an unique grid style: Masonry or Grid/Justified style. You can set this style in the item layout tab (in the layout settings panel):</p>
+
+            <img height="455" src="assets/images/skin-builder/2-skin-builder-edit2.jpg">
+
+		</section>
+        
+        
+        <section id="skin_layout">
+        
+        	<h5>Skin Layout</h5>
+        
+        	<p>At first, you need to build the main layout of your skin. All the general layout options are available in the Layout Settings panel under item layout tab:</p>
+			
+            <img height="620" src="assets/images/skin-builder/9-skin-builder-item-layout.jpg">
+            <img height="620" src="assets/images/skin-builder/9-skin-builder-item-layout2.jpg">
+            
+            <p>In this tab you can choose which content holders you want to display (depending of the skin style) in the skin: Top/Bottom content, Media content and overlay.<br>
+            The overlay can be hidden, it can also take the full size of the media or have its size based on the content avaialble over the media.</p>
+            
+            <p>Each of these container, can be styled in the Layout settings panel (<a href="#element_styles">exactly like for an element style</a>).</p>
+
+
+		</section>
+        
+        <section id="add_element">
+        
+        	<h5>Add Element</h5>
+        
+        	<p>The skin builder comes with several predefined elements.</p>
+            
+            <img height="560" src="assets/images/skin-builder/3-skin-builder-add-element.jpg">
+            
+            <p>Once you have added a new element in the skin, you can click on it in order to edit its content, appearance, action, animation. </p>
+			
+		</section>
+        
+        <section id="save_element">
+        
+        	<h5>Save Element</h5>
+        
+        	<p>You can save your own elements in order to use them later in any other skin.<br>
+            To save an element, you need to click on it and after click on the bottom green icon (save as template).<br>
+            Each custom element have an unique name and can be overridden by entering an existing element name.<br>
+            Your custom elements will be added in the <a href="#add_element">Add Element panel under customs elements tab</a>.</p>
+            
+            <img height="500" src="assets/images/skin-builder/5-skin-builder-save-element.jpg">
+			
+		</section>
+        
+        <section id="edit_element">
+        
+        	<h5>Edit Element</h5>
+        
+        	<p>To edit an element, you need to click on it (If you drag an element and then release, it will not select the element).<br>           
+            Once you have clicked on an element in the skin, a new popup will be opened.</p>
+
+            <p><strong>TIP</strong>: Sometimes, depending of the skin and elements positions, it can be a little bit difficult to select an element on click.<br>
+You can still select any skin element thanks to the dropdown list next to the green button "Add element".<br>
+In that way, even if you have elements one above each other, you will be able to select the desired element.</p>
+            
+            <img height="620" src="assets/images/skin-builder/4-skin-builder-edit-element.jpg">
+            
+            <p>In this element settings panel, you will be able to set:</p>
+			
+            <ul>
+            	<li>The content of the element</li>
+                <li>The element action on click (open a link or open lightbox/play video)</li>
+                <li>The element styles</li>
+                <li>The element animation (to make appear or disappear) an element with a transform effect and a transition</li>
+            </ul>
+            
+		</section>
+
+        <section id="element_styles">
+        
+        	<h5>Element Styles</h5>
+        
+        	<p>When an element is selected, you can adjust its appearance by clicking on the styles tab.<br>
+            2 states are available to add styles: Idle State and Hover State (when the mouse is hover an element)
+            </p>
+            
+            <p>You will find near all properties available to style any element. If you want to go deeper and add some properties which are not available then you can also add your own css rules in custom tab.</p>
+            
+            
+            <img height="500" src="assets/images/skin-builder/6-skin-builder-element-styles-idle.jpg">
+            <img height="500" src="assets/images/skin-builder/6-skin-builder-element-styles-hover.jpg">
+            
+            <p>If you want to have alternative styles on mouseover, then you must check apply styles on mouseover (under Hover State tab).</p>
+            
+            <p>Each style property has an important option which allows to force this property. This option can be used in 2 main cases:</p>
+            <ul>
+            	<li>To override a color scheme</li>
+                <li>To override a theme style (to prevent appearance issue with your theme)</li>
+            </ul>
+            
+            <p>This important rule, will force a style property and override all other existing styles attached to any element of a theme or plugin<br>
+            For example, if your theme applies an underline decoration for a link, then it will also apply this underline style for any link in a skin.<br>
+            However, by selecting important rule, and setting the text decoration to none, you will be able to remove this underline:</p>
+            
+            <img height="500" src="assets/images/skin-builder/6-skin-builder-element-styles-important.jpg">
+            		
+		</section>
+        
+        <section id="element_animation">
+        
+        	<h5>Element Animation</h5>
+            
+            <p>Animation allows to show, hide or only animate an element on mouseover from a parent container (not directly on element mouseover - Styles -> Hover State).<br>
+            The skin builder comes with 20+ preset animations. You can adjust each of these animations presets or create your own custom animation.
+            </p>
+            
+            <img height="500" src="assets/images/skin-builder/7-skin-builder-element-animation.jpg">
+            
+            <p>To see the result of an animation, you must be in preview mode.<br>
+            You can directly edit the animation in preview mode by making a mouse over the skin in order to see the result instantly.
+            </p>
+            
+            <img height="500" src="assets/images/skin-builder/7-skin-builder-element-animation2.jpg">
+
+            
+        </section>
+        
+        <section id="element_alignment">
+        
+        	<h5>Element Alignment</h5>
+            
+            <p>There are 2 ways to align elements (left/center/right) in a skin:</p>
+            
+            <ul>
+            	<li>By editing element styles</li>
+                <li>By applying an alignment on the parent container (of the element you want to align)</li>
+            </ul>
+            
+            <h6><u>By editing element styles</u></h6>
+            
+            <p>In the edit panel of an element, under position tab (in the styles tab), you can assign a float value (left/right) if the position is set to inline-block:</p>
+            
+            <img height="500" src="assets/images/skin-builder/8-skin-builder-element-alignment.jpg">
+            
+            <h6><u>By applying an alignment on the parent container</u></h6>
+            
+            <p>You can also align all element present in a content holder, by modifying the styles of the content holder (Top Content/ Media Content Holders/ Bottom Content):</p>
+            
+             <img height="500" src="assets/images/skin-builder/8-skin-builder-element-alignment2.jpg">
+             
+             <p><strong>Important</strong>: If the element have an absolute position, then the alignment will be not applied.</p>
+
+            
+        </section>
+        
+        <section id="element_metadata">
+        
+        	<h5>Element MetaData</h5>
+            
+            <p>With the skin builder, you have the possibility to add custom content hanks to metadata.<br>
+            There are 2 ways to add metadata content:</p>
+            
+            <ul>
+            	<li>In Source > Post Data and MetaData</li>
+                <li>In Source > Text/HTML</li>
+            </ul>
+            
+            
+            <h6><u>Post MetaData</u></h6>
+            
+            <p>With post metadata, you need to enter the metadata key name in order to display your metadata value:</p>
+            
+			<img height="560" src="assets/images/skin-builder/10-skin-builder-item-metadata.jpg">
+            
+            <h6><u>Text/HTML</u></h6>
+            
+            <p>If you want to go deeper with metadata and use the value to add style or anything else you can use the Text/HTML source.<br>
+            To fetch the metadata value, then you need to use this shortcode: <strong>#meta:my_meta_data_name#</strong></p>
+            
+			<img height="580" src="assets/images/skin-builder/10-skin-builder-item-metadata2.jpg">
+            
+            <p>In the previous example, we use the metadata value to add a width in % to a container.</p>
+            
+            <pre rel="PHP" class="language-php line-numbers"><div class="copy-code" onclick="copyToClipboard(this)"><i>&#x2713;</i>Copy</div><code class="language-php">&#60;div style="width: #meta:my_meta_data_name# %">rating stars&#60;/div></code></pre>
+            
+        </section>
+
+        
+    </section>
+    
+	</div>
+
+<div class="code-popup-overlay"></div>    
+
+</body>
+</html>

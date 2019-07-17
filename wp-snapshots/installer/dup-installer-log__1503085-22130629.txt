@@ -1,0 +1,173 @@
+********************************************************************************
+* DUPLICATOR-LITE: Install-Log
+* STEP-1 START @ 06:46:22
+* VERSION: 1.3.10
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PHP:		7.3.1 | SAPI: apache2handler
+PHP MEMORY:	4294967296 | SUHOSIN: disabled
+SERVER:		Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.1
+DOC ROOT:	C:/xampp/htdocs/scomunicacao
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	http://localhost/scomunicacao/dup-installer/main.installer.php
+SAFE MODE :	0
+CONFIG MODE :	NEW
+--------------------------------------
+PRE-EXTRACT-CHECKS
+--------------------------------------
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME:	20190418_scomunicacaointegrada_1503085b9fc6b4388307_20190422130629_archive.zip
+SIZE:	79.11MB
+
+>>> Starting ZipArchive Unzip
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 3748
+    [filename] => C:\xampp\htdocs\scomunicacao\20190418_scomunicacaointegrada_1503085b9fc6b4388307_20190422130629_archive.zip
+    [comment] => 
+)
+File timestamp set to Current: 2019-04-22 18:47:00
+<<< ZipArchive Unzip Complete: true
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+
+PERMISSION UPDATES: None Applied
+
+STEP-1 COMPLETE @ 06:47:00 - RUNTIME: 37.9943 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 06:47:45
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.1.37 -- Build Server: 10.1.28
+FILE SIZE:	dup-database__1503085-22130629.sql (659.96KB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/xampp/htdocs/scomunicacao/dup-installer/dup-installer-data__1503085-22130629.sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	15
+RENAMED TABLES:	0
+QUERIES RAN:	141
+
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_options: (137)
+wp_postmeta: (760)
+wp_posts: (136)
+wp_term_relationships: (27)
+wp_term_taxonomy: (7)
+wp_termmeta: (0)
+wp_terms: (7)
+wp_tg_item_elements: (0)
+wp_tg_item_skins: (0)
+wp_usermeta: (28)
+wp_users: (1)
+Removed '20' cache/transient rows
+
+INSERT DATA RUNTIME: 0.5739 sec.
+STEP-2 COMPLETE @ 06:47:46 - RUNTIME: 0.5807 sec.
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 06:47:50
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments~ (1)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (137)
+wp_postmeta~ (760)
+wp_posts~ (136)
+wp_term_relationships~ (27)
+wp_term_taxonomy~ (7)
+wp_termmeta^ (0)
+wp_terms~ (7)
+wp_tg_item_elements^ (0)
+wp_tg_item_skins^ (0)
+wp_usermeta~ (28)
+wp_users~ (1)
+--------------------------------------
+Search1:	'C:/xampp/htdocs/scomunicacao' 
+Change1:	'C:/xampp/htdocs/scomunicacao' 
+Search2:	'C:\/xampp\/htdocs\/scomunicacao' 
+Change2:	'C:\/xampp\/htdocs\/scomunicacao' 
+Search3:	'C%3A%2Fxampp%2Fhtdocs%2Fscomunicacao%2F' 
+Change3:	'C%3A%2Fxampp%2Fhtdocs%2Fscomunicacao%2F' 
+Search4:	'C:\xampp\htdocs\scomunicacao' 
+Change4:	'C:/xampp/htdocs/scomunicacao' 
+Search5:	'C:\\xampp\\htdocs\\scomunicacao' 
+Change5:	'C:\/xampp\/htdocs\/scomunicacao' 
+Search6:	'C%3A%5Cxampp%5Chtdocs%5Cscomunicacao' 
+Change6:	'C%3A%2Fxampp%2Fhtdocs%2Fscomunicacao' 
+Search7:	'//localhost/scomunicacao' 
+Change7:	'//localhost/scomunicacao' 
+Search8:	'\/\/localhost\/scomunicacao' 
+Change8:	'\/\/localhost\/scomunicacao' 
+Search9:	'%2F%2Flocalhost%2Fscomunicacao' 
+Change9:	'%2F%2Flocalhost%2Fscomunicacao' 
+Search10:	'https://localhost' 
+Change10:	'http://localhost' 
+Search11:	'https:\/\/localhost' 
+Change11:	'http:\/\/localhost' 
+Search12:	'https%3A%2F%2Flocalhost' 
+Change12:	'http%3A%2F%2Flocalhost' 
+SCANNED:	Tables:15 	|	 Rows:1104 	|	 Cells:7004 
+UPDATED:	Tables:0 	|	 Rows:1 	|	 Cells:1 
+ERRORS:		0 
+RUNTIME:	0.184700 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG ARK FILE:
+ - 'C:/xampp/htdocs/scomunicacao/wp-config.php'
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+
+====================================
+NOTICES
+====================================
+
+No General Notices Found
+
+
+STEP-3 COMPLETE @ 06:47:50 - RUNTIME: 0.2150 sec. 
+
+
